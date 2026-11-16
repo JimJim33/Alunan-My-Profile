@@ -56,8 +56,6 @@ class _ShelfScreenState extends State<ShelfScreen> {
   }
 }
 
-// ---------------------------------------------------------------- My Picks
-
 class PicksTab extends StatefulWidget {
   const PicksTab({
     super.key,
@@ -173,8 +171,6 @@ class _PicksTabState extends State<PicksTab>
   bool get wantKeepAlive => true;
 }
 
-// ------------------------------------------------------------------- Books
-
 class BookSearchTab extends StatefulWidget {
   const BookSearchTab({super.key, required this.api});
 
@@ -238,8 +234,6 @@ class _BookSearchTabState extends State<BookSearchTab>
   @override
   bool get wantKeepAlive => true;
 }
-
-// ------------------------------------------------------------------ Movies
 
 class MovieSearchTab extends StatefulWidget {
   const MovieSearchTab({super.key, required this.api});
@@ -309,8 +303,6 @@ class _MovieSearchTabState extends State<MovieSearchTab>
   @override
   bool get wantKeepAlive => true;
 }
-
-// ------------------------------------------------------------ Shared parts
 
 class _SearchLayout<T> extends StatelessWidget {
   const _SearchLayout({
@@ -473,6 +465,7 @@ class _ShelfCover extends StatelessWidget {
         width: _width,
         height: _height,
         fit: BoxFit.cover,
+        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
         errorBuilder: (_, _, _) => placeholder,
       ),
     );

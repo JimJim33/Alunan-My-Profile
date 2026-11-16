@@ -1,3 +1,3 @@
-alunan_unit7_exercise
+John Kim Alunan's Profile
 
-Flutter application
+A CC 207B Unit 8 Flutter profile app with a bio, pet page, photo gallery, book and movie search, and CMS-backed My Picks.

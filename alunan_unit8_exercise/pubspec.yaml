@@ -1,7 +1,7 @@
 name: alunan_unit6_exercise
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.0+1
+version: 1.1.0+2
 
 environment:
   sdk: ^3.13.5
@@ -23,6 +23,3 @@ flutter:
     - assets/images/
     - assets/images/gallery/
     - assets/sounds/
-    - assets/images/profile_image.jpg
-    - assets/images/pet_image.jpg
-    - assets/sounds/cat_meow.mp3

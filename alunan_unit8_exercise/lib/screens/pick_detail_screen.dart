@@ -198,6 +198,7 @@ class _Cover extends StatelessWidget {
         width: width,
         height: height,
         fit: BoxFit.cover,
+        webHtmlElementStrategy: WebHtmlElementStrategy.fallback,
         errorBuilder: (_, _, _) => placeholder,
       ),
     );

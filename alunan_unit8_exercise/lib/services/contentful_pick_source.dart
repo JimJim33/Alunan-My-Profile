@@ -17,7 +17,7 @@ class ContentfulPickSource implements PickSource {
   }) : _spaceId = spaceId ?? cmsSpace,
        _token = token ?? cmsToken,
        _environment = environment ?? cmsEnvironment,
-       _client = client ?? http.Client();
+      _client = client ?? http.Client();
 
   final String _spaceId;
   final String _token;
